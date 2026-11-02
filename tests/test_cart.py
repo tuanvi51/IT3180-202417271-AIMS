@@ -16,5 +16,19 @@ class TestCartLimit(unittest.TestCase):
         self.assertFalse(res_21)
 
 
+class TestCartDiscount(unittest.TestCase):
+    def test_discount_calculation(self):
+        cart = Cart()
+        cart.add_dvd(DigitalVideoDisc("DVD 1", cost=100.0))
+        # 100 giảm 20% = 80
+        self.assertAlmostEqual(cart.total_cost_with_discount(20), 80.0)
+
+    def test_invalid_discount_percent(self):
+        cart = Cart()
+        cart.add_dvd(DigitalVideoDisc("DVD 1", cost=100.0))
+        with self.assertRaises(ValueError):
+            cart.total_cost_with_discount(150)
+
+
 if __name__ == "__main__":
     unittest.main()
