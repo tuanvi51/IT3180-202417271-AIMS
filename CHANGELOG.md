@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Cart.sort_by_cost(): Sắp xếp các đĩa trong giỏ hàng theo giá giảm dần
 - search_by_category(): Tìm kiếm các đĩa DVD theo thể loại
 
+## [1.0.1] - 2026-11-02
+### Fixed
+- search_by_title: search DVDs with case-insensitive matching (#17)
+
 ## [1.0.0] - 2026-11-02
 ### Added
 - Cart.print_cart() for formatted cart output
