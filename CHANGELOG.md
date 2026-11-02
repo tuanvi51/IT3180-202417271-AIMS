@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-11-02
+### Fixed
+- search_by_title: search DVDs with case-insensitive matching (#17)
+
 ## [1.0.0] - 2026-11-02
 ### Added
 - Cart.print_cart() for formatted cart output
